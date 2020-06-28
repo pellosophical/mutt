@@ -328,6 +328,10 @@ a {
   color: #f0582c;
 }
 
+.footerbg {
+  width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .mutthero {
     padding-left: 8vw;
@@ -384,11 +388,24 @@ a {
 }
 
 @media screen and (max-width: 479px) {
+  h4 {
+    font-size: 14px;
+  }
   .muttlogo {
     width: 12rem;
   }
+  .mutthero {
+    height: 88vh;
+    background-position: 100% 25%;
+    background-size: 50%;
+    background-attachment: fixed;
+  }
   .muttmantra {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  .muttsquad {
+    padding-right: 8vw;
+    padding-left: 8vw;
   }
   .muttally {
     display: block;
@@ -399,6 +416,9 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
+  }
+  .biobody {
+    font-size: 1rem;
   }
   .muttadam {
     display: block;
@@ -411,6 +431,12 @@ a {
   }
   .partnersright {
     height: 50vh;
+  }
+  .bioname.orange {
+    font-size: 2.5rem;
+  }
+  .bioname.yellow {
+    font-size: 2.5rem;
   }
   .heading {
     padding-right: 4vw;
