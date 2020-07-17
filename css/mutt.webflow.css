@@ -1,17 +1,10 @@
-.w-layout-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-columns: 1fr;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-}
-
 body {
   background-color: #fef6ec;
+  background-image: url('../images/mutt-paper-a.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Poppins, sans-serif;
   color: #333;
   font-size: 14px;
@@ -22,7 +15,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: temeraire, sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -31,9 +24,9 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: temeraire, sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h3 {
@@ -58,7 +51,7 @@ h4 {
 h5 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -82,7 +75,8 @@ a {
   top: 0%;
   right: auto;
   bottom: auto;
-  width: 24rem;
+  z-index: 9;
+  width: 20rem;
 }
 
 .muttlogowrap {
@@ -94,11 +88,15 @@ a {
 }
 
 .mutthero {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  overflow: visible;
+  width: 100%;
+  height: 72vh;
+  min-height: 36rem;
   padding-left: 12vw;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -108,224 +106,453 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/blobs.png');
-  background-position: 100% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  font-size: 1rem;
 }
 
-.muttmantra {
-  max-width: 12em;
-  font-size: 4.2rem;
+.introcopy {
+  max-width: 22em;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 4vw;
+  font-family: Poppins, sans-serif;
+  color: #0c1c2a;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.125px;
 }
 
-.muttsquad {
-  padding: 8vh 12vw;
+.introcopy.second {
+  margin-left: 16vw;
 }
 
-.muttally {
-  display: -ms-grid;
-  display: grid;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-  grid-auto-columns: 1fr;
+.orange {
+  color: #f0582c;
+  font-weight: 600;
+}
+
+.yellow {
+  color: #f2a33a;
+  font-weight: 600;
+}
+
+.teal {
+  color: #2b656c;
+  font-weight: 600;
+}
+
+.heroblobs {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: -88%;
+  z-index: 1;
+  width: 48vw;
+  max-width: 32rem;
+}
+
+.typewriter {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+.intro {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 12vw 4rem 8vw;
+  background-color: #fef6ec;
+}
+
+.curvetop {
+  width: 100%;
+  margin-bottom: -1rem;
+}
+
+.curvebot {
+  width: 100%;
+  margin-top: -1rem;
+}
+
+.mantra {
+  margin-left: 8vw;
+  font-family: temeraire, sans-serif;
+  font-weight: 900;
+}
+
+.breed {
+  color: #2b656c;
+}
+
+.dota {
+  position: absolute;
+  left: auto;
+  top: 16%;
+  right: 32%;
+  bottom: auto;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: #2b656c;
+}
+
+.dotb {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  right: auto;
+  bottom: 0%;
+  z-index: 2;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #fcd39b;
+}
+
+.dotc {
+  position: absolute;
+  left: -2%;
+  top: 48%;
+  right: auto;
+  bottom: 0%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: #f2a33a;
+}
+
+.dotd {
+  position: absolute;
+  left: auto;
+  top: 56%;
+  right: 8%;
+  bottom: auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 100%;
+  background-color: #f0582c;
+}
+
+.pack {
+  position: relative;
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fef6ec;
+}
+
+.grid {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
-.allyheadshot {
+.headshotally {
+  position: relative;
+}
+
+.headshotadam {
+  position: relative;
+}
+
+.pically {
+  position: absolute;
+  left: 8%;
+  top: 40%;
+  right: auto;
+  bottom: 0%;
+  z-index: 1;
+  width: 36%;
+}
+
+.picadam {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 24rem;
+}
+
+.overlayally {
+  position: absolute;
+  left: 0%;
+  top: 22%;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  width: 28rem;
+}
+
+.overlayadam {
+  position: absolute;
+  left: 8rem;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+  width: 20rem;
+}
+
+.bgally {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: 0%;
+}
+
+.bgadam {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.bioally {
+  margin-top: 2rem;
+  padding-right: 8vw;
+  padding-left: 12vw;
+}
+
+.bioadam {
+  margin-top: -2rem;
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
+.imgally {
+  position: absolute;
+}
+
+.packheader {
+  position: relative;
+  width: 100%;
+}
+
+.packheaderpic {
   display: block;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.biolink {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url('../images/linkBlob.svg');
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-transition: -webkit-transform 200ms ease;
-  transition: -webkit-transform 200ms ease;
-  transition: transform 200ms ease;
-  transition: transform 200ms ease, -webkit-transform 200ms ease;
-  text-align: center;
-  text-decoration: none;
+.image {
+  position: absolute;
+  left: auto;
+  top: 16%;
+  right: 12%;
+  bottom: 0%;
+  width: 36%;
 }
 
-.biolink:hover {
-  -webkit-transform: scale(1.125);
-  -ms-transform: scale(1.125);
-  transform: scale(1.125);
-}
-
-.bioheader {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.biobody {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-.muttadam {
-  display: -ms-grid;
-  display: grid;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.adamheadshot {
-  width: 100%;
-}
-
-.adamlink {
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png');
-  background-position: 0px 0px;
-  background-size: 125px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.muttpartners {
-  margin-bottom: 16vh;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
-}
-
-.partnergrid {
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.partnersleft {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  padding-left: 8vw;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url('../images/partnersLeft.png');
-  background-position: 0% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.partnersright {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  padding-right: 8vw;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url('../images/partnersRight.png');
-  background-position: 100% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.partnerlistleft {
-  font-size: 1.5rem;
-  line-height: 1.8;
-  font-weight: 600;
-}
-
-.partnerlistright {
-  color: #fff;
-  font-size: 1.5rem;
-  line-height: 1.8;
-  font-weight: 600;
-  text-align: right;
+.biocols {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .bioname {
   margin-top: 0px;
-  margin-right: 0.5rem;
-  margin-bottom: 0px;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
   font-weight: 900;
 }
 
-.bioname.orange {
-  color: #f0582c;
+.biotitle {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
-.bioname.yellow {
-  color: #f2a33a;
+.biocopy {
+  max-width: 24em;
+  font-size: 1em;
+  font-weight: 300;
 }
 
-.body {
+.biolink {
+  width: 8rem;
+  margin-top: 1rem;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.biolink:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.partners {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.partnersheader {
+  max-width: 16em;
+  margin-right: auto;
+  margin-left: auto;
   color: #0c1c2a;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
 }
 
-.footer {
-  margin-top: 8vh;
+.partnerheader {
+  text-align: center;
 }
 
-.muttline {
-  margin-bottom: 8vh;
-  padding: 8vh 12vw;
+.partnerheader.barkbox {
+  color: #2b656c;
+  font-weight: 700;
 }
 
-.typed {
+.partnerheader.draftkings {
   color: #f0582c;
+}
+
+.partnerheader.helloflo {
+  color: #f2a33a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.partnerheader.panda {
+  color: #0c1c2a;
+  font-weight: 400;
+}
+
+.partnerheader.polaroid {
+  color: #2b656c;
+  font-weight: 900;
+}
+
+.partnercol {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.partnercol.second {
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contactheader {
+  color: #0c1c2a;
+  font-weight: 400;
+}
+
+.contactmax {
+  color: #f0582c;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.contactwrap {
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
+.contactlink {
+  text-decoration: none;
+}
+
+.dote {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 4%;
+  bottom: 8%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background-color: #2b656c;
+}
+
+.dotf {
+  position: absolute;
+  right: 12%;
+  bottom: 4%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: #f0582c;
+}
+
+.dotg {
+  position: absolute;
+  left: 4%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: #f2a33a;
+}
+
+.doth {
+  position: absolute;
+  left: 16%;
+  top: auto;
+  right: auto;
+  bottom: -8%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background-color: #2b656c;
+}
+
+.doti {
+  position: absolute;
+  left: auto;
+  top: 4%;
+  right: 8%;
+  bottom: auto;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #f0582c;
+}
+
+.dotj {
+  position: absolute;
+  right: -4%;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: #0c1c2a;
+}
+
+.dotk {
+  position: absolute;
+  left: 4%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: #f2a33a;
 }
 
 .footerbg {
@@ -333,61 +560,98 @@ a {
 }
 
 @media screen and (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
   .mutthero {
     padding-left: 8vw;
   }
-  .muttmantra {
-    font-size: 3.6rem;
+  .heroblobs {
+    bottom: -64%;
   }
-  .partnerlistleft {
-    font-size: 1.2rem;
+  .intro {
+    padding-top: 8rem;
   }
-  .partnerlistright {
-    font-size: 1.2rem;
-  }
-  .heading {
-    font-size: 2rem;
-  }
-  .heading-2 {
-    font-size: 2.5rem;
-  }
-  .heading-3 {
+  .partnerheader {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
+  h1 {
+    font-size: 2rem;
+  }
   .muttlogo {
     width: 16rem;
   }
   .mutthero {
-    background-size: 50%;
+    height: auto;
+    min-height: 24rem;
+    background-image: none;
   }
-  .muttmantra {
-    font-size: 2.4rem;
+  .heroblobs {
+    bottom: -44%;
+    width: 32vw;
   }
-  .muttsquad {
-    padding-right: 4vw;
-    padding-left: 4vw;
+  .intro {
+    padding-top: 4rem;
   }
-  .partnerlistleft {
-    font-size: 1rem;
+  .curvetop {
+    display: none;
   }
-  .partnerlistright {
-    font-size: 1rem;
+  .curvebot {
+    position: relative;
+    z-index: 1;
+    display: none;
+    margin-bottom: -10rem;
   }
-  .heading {
+  .mantra {
+    max-width: 12em;
+  }
+  .dota {
+    top: 8%;
+  }
+  .partners {
+    padding-top: 4rem;
+    background-image: url('../images/mutt-paper-a.jpg');
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+  .partnersheader {
     font-size: 1.5rem;
   }
-  .heading-2 {
+  .partnerheader {
+    font-size: 1.5rem;
+  }
+  .partnercol.second {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .contact {
+    background-image: url('../images/mutt-paper-a.jpg');
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+  .contactheader {
     font-size: 2rem;
   }
-  .heading-3 {
+  .contactmax {
     font-size: 1.5rem;
+  }
+  .footerbg {
+    background-image: url('../images/mutt-paper-a.jpg');
+    background-position: 0px 0px;
+    background-size: cover;
   }
 }
 
 @media screen and (max-width: 479px) {
+  h1 {
+    font-size: 1.5rem;
+  }
   h4 {
     font-size: 14px;
   }
@@ -395,214 +659,89 @@ a {
     width: 12rem;
   }
   .mutthero {
-    height: 88vh;
-    background-position: 100% 25%;
-    background-size: 50%;
-    background-attachment: fixed;
+    height: 56vh;
+    background-image: none;
   }
-  .muttmantra {
-    font-size: 2.5rem;
+  .introcopy {
+    font-size: 1.2rem;
   }
-  .muttsquad {
-    padding-right: 8vw;
-    padding-left: 8vw;
+  .heroblobs {
+    bottom: -44%;
+    width: 56vw;
   }
-  .muttally {
+  .intro {
+    padding-top: 4rem;
+  }
+  .curvetop {
     display: block;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
+    margin-bottom: -0.5rem;
   }
-  .biobody {
+  .curvebot {
+    display: block;
+    margin-top: -0.5rem;
+    margin-bottom: -5rem;
+  }
+  .mantra {
+    font-size: 2.25rem;
+  }
+  .dota {
+    top: 8%;
+  }
+  .dotb {
+    top: 40%;
+  }
+  .dotc {
+    left: -4%;
+  }
+  .dotd {
+    top: 44%;
+    right: 8%;
+  }
+  .bioally {
+    margin-top: 0rem;
+  }
+  .bioadam {
+    margin-top: 4rem;
+    text-align: right;
+  }
+  .partners {
+    padding-top: 6rem;
+  }
+  .partnersheader {
     font-size: 1rem;
   }
-  .muttadam {
-    display: block;
+  .partnerheader {
+    font-size: 1rem;
   }
-  .partnergrid {
-    display: block;
+  .contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
-  .partnersleft {
-    height: 50vh;
-  }
-  .partnersright {
-    height: 50vh;
-  }
-  .bioname.orange {
-    font-size: 2.5rem;
-  }
-  .bioname.yellow {
-    font-size: 2.5rem;
-  }
-  .heading {
-    padding-right: 4vw;
-    padding-left: 4vw;
-    font-size: 1.25rem;
-  }
-  .heading-2 {
+  .contactheader {
+    max-width: 8em;
     font-size: 1.5rem;
   }
-  .heading-3 {
-    font-size: 1rem;
+  .contactmax {
+    font-size: 1.125rem;
   }
-}
-
-#w-node-d11f12792208-18a07364 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-column-span: 3;
-  grid-column-end: 4;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-}
-
-#w-node-d11f1279220c-18a07364 {
-  -ms-grid-column-span: 3;
-  grid-column-end: 6;
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-column-align: stretch;
-  justify-self: stretch;
-}
-
-#w-node-304a39a4a497-18a07364 {
-  -ms-grid-column-span: 1;
-  grid-column-end: 3;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-grid-column-align: center;
-  justify-self: center;
-}
-
-#w-node-a660d8b1703c-18a07364 {
-  -ms-grid-column: 4;
-  grid-column-start: 4;
-  -ms-grid-column-span: 3;
-  grid-column-end: 7;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-}
-
-#w-node-91cec85ffa7b-18a07364 {
-  -ms-grid-column-span: 3;
-  grid-column-end: 5;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-column-align: stretch;
-  justify-self: stretch;
-}
-
-#w-node-8b01d1f0e0b9-18a07364 {
-  -ms-grid-column-span: 1;
-  grid-column-end: 6;
-  -ms-grid-column: 5;
-  grid-column-start: 5;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-grid-column-align: center;
-  justify-self: center;
-}
-
-#w-node-d32d435e0fd6-18a07364 {
-  -ms-grid-column-span: 3;
-  grid-column-end: 5;
-  -ms-grid-column: 2;
-  grid-column-start: 2;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
-}
-
-#w-node-cff0b575514d-18a07364 {
-  -ms-grid-column-span: 4;
-  grid-column-end: 7;
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-}
-
-#w-node-fb1a602c728c-18a07364 {
-  -ms-grid-column-span: 4;
-  grid-column-end: 5;
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 3;
-  -ms-grid-row: 2;
-  grid-row-start: 2;
-  -ms-grid-row-align: auto;
-  align-self: auto;
-  -ms-grid-column-align: auto;
-  justify-self: auto;
-}
-
-@media screen and (max-width: 991px) {
-  #w-node-d11f12792208-18a07364 {
-    -ms-grid-column-span: 5;
-    grid-column-end: 5;
+  .dote {
+    left: 4%;
+    right: auto;
   }
-  #w-node-d11f1279220c-18a07364 {
-    -ms-grid-column-span: 7;
-    grid-column-end: 7;
+  .dotf {
+    left: 16%;
+    right: auto;
   }
-  #w-node-a660d8b1703c-18a07364 {
-    -ms-grid-column: 3;
-    grid-column-start: 3;
+  .dotg {
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  #w-node-91cec85ffa7b-18a07364 {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
+  .doth {
+    left: 24%;
+    bottom: -12%;
   }
-  #w-node-8b01d1f0e0b9-18a07364 {
-    -ms-grid-column-span: 7;
-    grid-column-end: 7;
-  }
-  #w-node-d32d435e0fd6-18a07364 {
-    -ms-grid-column-span: 4;
-    grid-column-end: 6;
-    -ms-grid-column: 2;
-    grid-column-start: 2;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #w-node-d11f12792208-18a07364 {
-    -ms-grid-column-span: 6;
-    grid-column-end: 6;
-  }
-  #w-node-a660d8b1703c-18a07364 {
-    -ms-grid-column: 2;
-    grid-column-start: 2;
+  .dotj {
+    right: -16%;
   }
 }
 
