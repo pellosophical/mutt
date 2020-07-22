@@ -402,14 +402,17 @@ a {
 .partnersheader {
   max-width: 16em;
   margin-right: auto;
+  margin-bottom: 2rem;
   margin-left: auto;
   color: #0c1c2a;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-style: italic;
   font-weight: 400;
 }
 
 .partnerheader {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
   text-align: center;
 }
 
@@ -418,8 +421,16 @@ a {
   font-weight: 700;
 }
 
+.partnerheader.barkbox:hover {
+  color: #f2a33a;
+}
+
 .partnerheader.draftkings {
   color: #f0582c;
+}
+
+.partnerheader.draftkings:hover {
+  color: #0c1c2a;
 }
 
 .partnerheader.helloflo {
@@ -428,14 +439,26 @@ a {
   font-weight: 400;
 }
 
+.partnerheader.helloflo:hover {
+  color: #f0582c;
+}
+
 .partnerheader.panda {
   color: #0c1c2a;
   font-weight: 400;
 }
 
+.partnerheader.panda:hover {
+  color: #f0582c;
+}
+
 .partnerheader.polaroid {
   color: #2b656c;
   font-weight: 900;
+}
+
+.partnerheader.polaroid:hover {
+  color: #f2a33a;
 }
 
 .partnercol {
@@ -461,10 +484,16 @@ a {
 }
 
 .contactmax {
-  color: #f0582c;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  color: #2b656c;
   font-size: 2rem;
   font-style: normal;
   font-weight: 900;
+}
+
+.contactmax:hover {
+  color: #f2a33a;
 }
 
 .contactwrap {
@@ -557,6 +586,19 @@ a {
 
 .footerbg {
   width: 100%;
+}
+
+.partnerlink {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
